@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .home {
+                margin-top: 40px;
+            }
+
+            h1 {
+                background-color: #202020;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 10vh;
+                text-align: center;
+                margin-right: 20px;
+            }
+
+            h3 {
+                text-align: center;
+                color: white;
+                text-decoration: underline;
+            }
+
+            .waviy {
+                position: relative;
+            }
+
+            .waviy span {
+                position: relative;
+                display: inline-block;
+                font-size: 40px;
+                color: white;
+                text-transform: uppercase;
+                animation: flip 3s infinite;
+                animation-delay: calc(.2s * var(--i))
+            }
+
+            @keyframes flip {
+
+                0%,
+                80% {
+                    transform: rotateY(360deg)
+                }
+            }
+
+            .object {
+                width: 17.22%;
+                float: left;
+                min-height: 350px;
+                border-width: 2px;
+                border-color: white;
+                border-style: dashed;
+                position: relative;
+                margin-left: 32px;
+                letter-spacing: 2px;
+            }
+
+            .trt {
+                margin-left: 645px;
+                margin-top: 430px;
+                width: 230px;
+                height: 30px;
+                border: dashed 2px white;
+                color: white;
+                font-size: 18px;
+            
+            }
+        </style>
+    </head>
+    <h1>
+        <div class="waviy">
+            <span style="--i:1">S</span>
+            <span style="--i:2">T</span>
+            <span style="--i:3">R</span>
+            <span style="--i:4">A</span>
+            <span style="--i:5">I</span>
+            <span style="--i:6">G</span>
+            <span style="--i:7">H</span>
+            <span style="--i:8">T</span>
+            <span style="--i:9"> &nbsp</span>
+            <span style="--i:10">L</span>
+            <span style="--i:11">I</span>
+            <span style="--i:12">N</span>
+            <span style="--i:13">E</span>
+            <span style="--i:14">S</span>
+        </div>
+    </h1>
+    <body style="background-color: #202020"></body>
+    <div class="object">
+        <a href="coord.html">
+            <img style="width: 260px;height: 221px;" src="images/cord.png">
+            <h3>CO-ORDINATES OF POINT</h3>
+        </a>
+    </div>
+    <div class="object">
+        <a href="distancebtw.php">
+            <img style="width: 260px;height: 221px;" src="images/dbttp.png">
+            <h3>DISTANCE BETWEEN TWO POINTS</h3>
+        </a>
+    </div>
+    <div class="object">
+        <a href="slope2given.php">
+            <img style="width: 260px;height: 221px;" src="images/slope2pnts.png">
+            <h3>SLOPE OF LINE</h3>
+        </a>
+    </div>
+    <div class="object">
+        <a href="pointslope.php">
+            <img style="width: 260px;height: 221px;" src="images/slopepntfrm.png">
+            <h3>POINT SLOPE FORM</h3>
+        </a>
+    </div>
+    <div class="object">
+        <a href="2pointform.php">
+            <img style="width: 260px;height: 221px;" src="images/2pntfrm4.png">
+            <h3>TWO POINT FORM</h3>
+        </a>
+    </div>
+    <div class="trt">
+        &nbsp&nbsp&nbsp<a href="tutorial.html" style="color: white;">TUTORIAL</a>&nbsp &nbsp &nbsp </a>
+    </div>
+    </body>
+</html>

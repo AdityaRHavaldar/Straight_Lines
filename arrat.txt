@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript take inputs from user</title>
+</head>
+
+<body>
+    
+
+    <form>
+       x1 <input type="text" name="arrvalues" /><br><br>
+     y1 <input type="text" name="arrvalues" /><br><br>
+ x2  <input type="text" name="arrvalues" />
+      y2<input type="text" name="arrvalues" />
+        
+        <button type="button" name="button" onclick="print()">
+            Submit
+        </button>
+    </form>
+
+    <p id="result" />
+
+
+    <script type="text/javascript">
+
+        function print() {
+            let arrayValues = document.getElementsByName('arrvalues');
+            
+            let resultString = "You have entered :";
+
+            for (let i = 0; i < arrayValues.length; i++) {
+                resultString += arrayValues[i].value;
+
+                if (i < arrayValues.length - 2) {
+                    resultString += ', ';
+                } else if (i !== arrayValues.length - 1) {
+                    resultString += ' and ';
+                }
+            }
+
+            document.getElementById("result").innerHTML = resultString;
+        }
+
+    </script>
+</body>
+
+</html>
