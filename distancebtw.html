@@ -21,7 +21,6 @@
   background-size: 300% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -63,10 +62,17 @@
       .text6{
          width: 300px;
       }
+      .column-grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+            width: 96%;
+            margin: 2%;
+        }
    
     .column
     {
-    width:48.33%;
+    width:100%;
         float:left;
         text-align: center;
         color: white;
@@ -91,7 +97,11 @@
       height: 434px;
     
     }
-
+    .heading-container {
+      width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
 
 
@@ -183,11 +193,6 @@ input{
 
 
 
-
-    }
-
-
-
   </style>
 
    
@@ -195,11 +200,13 @@ input{
    </head>
    
    <body style="background-color: rgba(0, 0, 0); ">
-    <center> <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">distance between two  points</h1></center> 
+    <div class="heading-container">
+      <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">distance between two  points</h1>
+    </div>
 
-
-<div class="column" style="">
-  <a href="home page.html" style="margin-left: 565px;font-size: 15px;margin-top:600px;color:orange">HOME</a>
+<div class="column-grid">
+<div class="column">
+  <a href="index.html" style="float: right; padding: 10px; color:orange">HOME</a>
   
 <div class="dss">
   <label>ENTER THE VALUE OF X1 </label>
@@ -221,11 +228,8 @@ input{
   <input type="text" name=""   id="dis" style=" width: 200px;height: 30px ;margin-bottom: 30px;"><br>
   <label style="font-size: 20px;color: gold;"><b>FORMULAE:- d = √[( x 2 − x 1 )2 + ( y 2 − y 1 )2]<br></b></label>
 </div>
-
-
-
-<div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas" style="background-image: url(ghr.png); ";></canvas><br /><br /></div>
-
+<div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas" style="background-image: url(ghr.png); ";></canvas></div>
+</div>
 <script type="text/javascript">
 function distance()
 {

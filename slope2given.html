@@ -62,31 +62,43 @@
       width: 300px;
     }
 
+    .columns-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+            width: 96%;
+            margin: 2%;
+        }
+
     .column {
-      width: 48.33%;
-      float: left;
-      text-align: center;
-      color: white;
-      min-height: 536px;
-      border-width: 2px;
-      border-color: white;
-      border-style: dashed;
-      position: relative;
-      margin-left: 10px;
-      background-color: #202020;
-      margin-bottom: 50px;
-      margin-top: -30px;
+      width: 100%;
+            float: left;
+            text-align: center;
+            color: white;
+            min-height: 480px;
+            border-width: 2px;
+            border-color: white;
+            border-style: dashed;
+            position: relative;
+            margin-left: 10px;
+            background-color: #202020;
+            margin-bottom: 50px;
+            margin-top: -30px;
     }
 
     .dss {
       margin-left: 30px;
-
-      text-align: center;
-      margin-top: 0px;
-      width: 45.33%;
+text-align: center;
+margin-top: 20px;
+width: 49.33%;
+height: 454px;
     }
 
-
+.heading-container{
+  width: 100%;
+            display: flex;
+            justify-content: center;
+}
 
 
     .nikil {
@@ -181,11 +193,12 @@
 </head>
 
 <body style="background-color: rgba(0, 0, 0); ">
+  <div class="heading-container">
   <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">SLOPE OF THE LINE </h1>
-
-
+</div>
+<div class="columns-container">
   <div class="column">
-    <a href="home page.html" style="margin-left: 565px;font-size: 15px;margin-top:600px;color: orange">HOME</a>
+    <a href="index.html" style="float: right; padding: 10px; color: orange">HOME</a>
 
     <div class="dss">
       <label>ENTER THE VALUE OF X1 </label>
@@ -197,13 +210,9 @@
       <label>ENTER THE VALUE OF Y2 </label>
       <input type="number" name="" maxlength="3" id="y2" style=" width: 75px;height: 30px;"><br><br><br>
 
-
-
-
-
       <div class="nikil">
         <button class="glow-on-hover" onclick="tslope();draw();" id="slpp"
-          type="button">CALCULATE</button>&nbsp&nbsp&nbsp&nbsp&nbsp <a href="slope2given.html"><button
+          type="button">CALCULATE</button><a href="slope2given.html"><button
             class="glow-on-hover" type="reset" id="dist" onclick="reset">RESET</button></a>
       </div>
       <label style="font-size: 20px;color: orange;">SLOPE OF THE POINTS</label>
@@ -217,7 +226,9 @@
 
   </div>
   <div class="column" style="background-color: white;color: black"><canvas width="605" height="510" id="myCanvas"
-      style="background-image: url(ghr.png);"></canvas><br /><br /></div>
+      style="background-image: url(ghr.png);"></canvas></div>
+</div>
+
   <script type="text/javascript">
     function tslope() {
       var x1 = parseInt(document.getElementById("x1").value);
