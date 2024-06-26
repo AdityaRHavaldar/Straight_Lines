@@ -24,7 +24,6 @@
             display: inline-block;
             font-size: 50px;
             margin-bottom: 20px;
-            margin-left: 500px;
         }
 
         @keyframes textclip {
@@ -127,6 +126,11 @@
             transition: opacity .3s ease-in-out;
             border-radius: 10px;
         }
+        .heading-container {
+      width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
         .glow-on-hover:active {
             color: #000
@@ -179,10 +183,12 @@
 </head>
 
 <body style="background-color: rgba(0, 0, 0); ">
-    <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">point slope form</h1>
+    <div class="heading-container">
+        <h1 class="ani" style="text-align: center;position: relative; bottom:40px; ">point slope form</h1>
+    </div>
     <div style="display: flex;">
         <div class="column">
-            <a href="index.php" style="margin-left: 680px;font-size: 15px;margin-top:600px;color: orange">HOME</a>
+            <a href="index.html" style="float: right; padding: 10px; color: orange">HOME</a>
             <!-- <form action="" method="post"> -->
                 <div class="dss">
                     <label>ENTER THE VALUE OF X1 </label>
